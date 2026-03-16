@@ -1,0 +1,6 @@
+.venv/
+.idea/
+clinical_model/
+*.bin
+*.pt
+*.safetensors

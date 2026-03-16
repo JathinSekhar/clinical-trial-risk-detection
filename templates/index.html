@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clinical Trial Risk Intelligence</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Clinical Trial Risk Intelligence Platform</h1>
+    <p class="subtitle">AI-powered regulatory risk assessment</p>
+
+    <textarea id="trialText" placeholder="Paste clinical trial summary here..."></textarea>
+
+    <button onclick="analyzeTrial()">Analyze Trial</button>
+
+    <div id="resultSection" class="hidden">
+
+        <div id="riskBanner"></div>
+
+        <div class="metrics">
+            <div class="card">
+                <h3>Predicted Category</h3>
+                <p id="topLabel"></p>
+            </div>
+            <div class="card">
+                <h3>Confidence</h3>
+                <p id="confidence"></p>
+            </div>
+            <div class="card">
+                <h3>Risk Severity Index</h3>
+                <p id="riskScore"></p>
+            </div>
+        </div>
+
+        <div class="report">
+            <h2>Clinical Risk Assessment Report</h2>
+            <pre id="summary"></pre>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
